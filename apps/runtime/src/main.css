@@ -1,0 +1,50 @@
+.lc-runtime__loading {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #86909c;
+  font-size: 14px;
+}
+
+.lc-runtime__message {
+  max-width: 640px;
+  margin: 80px auto;
+  padding: 24px;
+  border: 1px solid #f7c5c5;
+  border-radius: 8px;
+  background: #fff;
+  color: #1f2329;
+}
+
+.lc-runtime__message h1 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  color: #f53f3f;
+}
+
+.lc-runtime__message p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #4e5969;
+  word-break: break-word;
+}
+
+.lc-runtime__message .hint {
+  color: #86909c;
+  font-size: 13px;
+}
+
+.lc-runtime__preview {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9999;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(22, 93, 255, 0.9);
+  color: #fff;
+  font-size: 12px;
+  pointer-events: none;
+}

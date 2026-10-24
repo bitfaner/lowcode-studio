@@ -1,0 +1,28 @@
+services:
+  lowcode:
+    image: lit-lowcode-platform:${IMAGE_TAG:-local}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    init: true
+    ports:
+      - "${LOWCODE_PORT:-3000}:3000"
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3000
+      DB_FILE: /data/lowcode.db
+      STUDIO_DIR: /app/studio
+      RUNTIME_DIR: /app/runtime
+      STUDIO_TOKEN: ${STUDIO_TOKEN:-}
+      ALLOW_PRIVATE_DATASOURCE: ${ALLOW_PRIVATE_DATASOURCE:-0}
+      DATASOURCE_ALLOWED_HOSTS: ${DATASOURCE_ALLOWED_HOSTS:-}
+      DATASOURCE_MAX_BYTES: ${DATASOURCE_MAX_BYTES:-5MB}
+    volumes:
+      - lowcode-data:/data
+    restart: unless-stopped
+    stop_grace_period: 10s
+
+volumes:
+  lowcode-data:
+    name: lit-lowcode-data

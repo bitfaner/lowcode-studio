@@ -1,0 +1,13 @@
+.git
+.gitignore
+node_modules
+**/node_modules
+**/dist
+apps/server/data
+apps/studio/public/vendor
+apps/studio/public/assets/assets.json
+coverage
+*.log
+.DS_Store
+.env
+.env.*

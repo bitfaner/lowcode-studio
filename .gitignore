@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+apps/studio/public/vendor/
+apps/studio/public/assets/assets.json
+apps/server/data/
+coverage/

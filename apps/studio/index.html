@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LowCode Studio</title>
+    <link rel="icon" href="data:," />
+
+    <!-- 主题变量 -->
+    <link rel="stylesheet" href="/vendor/theme/variables.css" />
+    <link rel="stylesheet" href="/vendor/theme/next.var.min.css" />
+    <link rel="stylesheet" href="/vendor/next.min.css" />
+    <!-- antd 6 基础样式（组件样式为 CSS-in-JS，运行时注入） -->
+    <link rel="stylesheet" href="/vendor/antd.reset.css" />
+    <!-- 引擎框架样式 -->
+    <link rel="stylesheet" href="/vendor/engine-core.css" />
+    <link rel="stylesheet" href="/vendor/engine-ext.css" />
+
+    <!-- 依赖（顺序不可调整：antd 依赖 React/ReactDOM/dayjs 全局） -->
+    <script src="/vendor/react.development.js"></script>
+    <script src="/vendor/react-dom.development.js"></script>
+    <script src="/vendor/prop-types.js"></script>
+    <script src="/vendor/react15-polyfill.js"></script>
+    <script src="/vendor/lodash.min.js"></script>
+    <script src="/vendor/moment.min.js"></script>
+    <script src="/vendor/dayjs.min.js"></script>
+    <script src="/vendor/antd.min.js"></script>
+    <script src="/vendor/next.min.js"></script>
+    <script src="/vendor/engine-core.js"></script>
+    <script src="/vendor/engine-ext.js"></script>
+
+    <style>
+      html,
+      body,
+      #app {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow: hidden;
+        background: #f7f8fa;
+      }
+      #app {
+        display: block;
+      }
+      #app > * {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

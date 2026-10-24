@@ -1,0 +1,35 @@
+{
+  "name": "@lc/studio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "@alilc/lowcode-engine": "1.3.4",
+    "@alilc/lowcode-engine-ext": "1.0.6",
+    "@alilc/lowcode-plugin-components-pane": "2.0.4",
+    "@alilc/lowcode-plugin-undo-redo": "1.0.1",
+    "@alilc/lowcode-types": "1.3.4",
+    "@lc/materials-react": "workspace:*",
+    "@lc/schema": "workspace:*",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "antd": "6.6.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "sass": "^1.106.0",
+    "sass-loader": "^17.0.1",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
